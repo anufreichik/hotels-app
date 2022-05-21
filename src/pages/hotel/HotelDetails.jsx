@@ -30,7 +30,7 @@ const HotelDetails = () => {
                 <div className="hotelDetailsWrapper">
 
                     <div className="hotelImages">
-                        <HotelImages/>
+                        <HotelImages hotelid={hotelid}/>
                     </div>
                     <div className="hotelDetailsOverview">
 
