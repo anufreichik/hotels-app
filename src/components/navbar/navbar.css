@@ -1,0 +1,72 @@
+.navbarContainer {
+    width: 100%;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarWrapper {
+    width: 100%;
+    max-width: 1348px;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 48px 24px 44px;
+    align-items: center;
+
+}
+
+.logo > img {
+    width: 121px;
+    height: 63px;
+}
+
+.navbarMenuContainer {
+    width: 100%;
+    max-width: 554px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.navButton {
+    font-family: 'Forum';
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.menuItem {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+.logoText {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.link{
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

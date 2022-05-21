@@ -1,0 +1,50 @@
+.header {
+    background-color: #3664ad;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.headerContainer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 63px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    width:138px;
+    text-align: center;
+}
+.titleText{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 98.5%;
+    /* or 25px */
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    /* Style */
+    color: #0C0B10;
+
+}
+.titleBig{
+    width: 936px;
+    text-align: center;
+}
+.titleBigText{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 110px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    mix-blend-mode: lighten;
+}

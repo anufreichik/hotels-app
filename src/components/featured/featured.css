@@ -1,0 +1,40 @@
+.featuredContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*gap: 10px;*/
+    grid-auto-rows: minmax(100px, auto);
+}
+.gridItem{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px 0;
+    font-size: 30px;
+    position:relative;
+    cursor: pointer;
+}
+.gridImage{
+    width:350px;
+    height: 570px;
+    object-fit: cover;
+}
+.gridItemText{
+    position:absolute;
+    top:500px;
+    left:34px;
+    color:#FFFFFF;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 98.5%;
+    /* or 35px */
+
+    display: flex;
+    align-items: center;
+}
+
+.locIcon{
+    margin-right: 6px;
+    width:16px;
+}

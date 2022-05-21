@@ -1,0 +1,18 @@
+
+.regionSelect{
+    width:300px;
+    font-family: 'Manrope';
+    font-size: 16px;
+    padding:5px;
+    color: #79655E;
+    height: 40px;
+    border: 1.6px solid #E2D3CE;
+    border-radius: 74px;
+    box-sizing: border-box;
+}
+.regionOption{
+    padding: 5px;
+    font-family: 'Manrope';
+    font-size: 16px;
+    color: #79655E;
+}

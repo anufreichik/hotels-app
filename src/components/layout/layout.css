@@ -1,0 +1,14 @@
+.layoutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.layoutWrapper{
+    width:100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    background: #E2D3CE;
+    height: 100%;
+    min-height:100vh;
+}

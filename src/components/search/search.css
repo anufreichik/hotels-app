@@ -1,0 +1,121 @@
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.searchWrapper {
+    width: 100%;
+    max-width: 1100px;
+    height: 114px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.searchTitle {
+    position: absolute;
+    top: -38px;
+    background-color: white;
+    border-radius: 67px;
+    width:330px;
+    height:55px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.searchTitleText{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #79655E;
+    z-index: 9999;
+}
+
+.searchItemsContainer {
+    min-width: 1100px;
+    padding: 30px 26px 30px 37px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1100px;
+/*z-index: 999;*/
+}
+.searchItem{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap:10px;
+}
+.buttonsWrapper{
+    display: flex;
+    gap:10px;
+}
+.headerSearchInput {
+    border: 1.6px solid #E2D3CE;
+    border-radius: 74px;
+    padding:3px;
+    font-family: 'Manrope';
+    outline: none;
+    width: 180px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #79655E;
+    box-sizing: border-box;
+}
+.searchItemTitle{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #79655E;
+}
+.headerSearchText {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 25px;
+}
+.date {
+    position: absolute;
+    top: 115px;
+    z-index: 2;
+}
+
+.buttonSearch{
+    width: 80px;
+    height: 50px;
+    background: #0C0B10;
+    border-radius: 100px;
+    color:white;
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.buttonReset{
+    background: #E2D3CE;
+    border:none;
+}
+
