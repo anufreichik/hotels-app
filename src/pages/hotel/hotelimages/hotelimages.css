@@ -1,9 +1,9 @@
-.imagesContainer{
+.hotelDetailsImagesContainer{
    display: flex;
     justify-content: center;
     margin-top:50px;
 }
-.imagesWrapper{
+.hotelDetailsImagesWrapper{
     display: grid;
     grid-template-columns: 1fr repeat(2, 1fr);
     grid-template-rows:repeat(2, 1fr);
@@ -19,13 +19,13 @@
     grid-column:1/ span 1;
     grid-row:1/ span 2;
 }
-.mainImage>img{
+.mainHotelDetailsImage>img{
     /*width:100%;*/
     object-fit: cover;
     width:720px;
     height:400px;
 }
-.gridImage{
+.gridHotelDetailsImage{
     width:350px;
     height:200px;
 }

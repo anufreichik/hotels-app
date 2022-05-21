@@ -3,15 +3,15 @@ import france from '../../../images/france.png'
 import './hotelimages.css';
 const HotelImages = ({data}) => {
     return (
-        <div className='imagesContainer'>
-            <div className="imagesWrapper">
-                <div className='mainImage'>
+        <div className='hotelDetailsImagesContainer'>
+            <div className="hotelDetailsImagesWrapper">
+                <div className='mainHotelDetailsImage'>
                     <img src={france} />
                 </div>
-                <img className='gridImage' src={france}/>
-                <img className='gridImage' src={france}/>
-                <img className='gridImage' src={france}/>
-                <img className='gridImage' src={france}/>
+                <img className='gridHotelDetailsImage' src={france}/>
+                <img className='gridHotelDetailsImage' src={france}/>
+                <img className='gridHotelDetailsImage' src={france}/>
+                <img className='gridHotelDetailsImage' src={france}/>
             </div>
         </div>
     );
