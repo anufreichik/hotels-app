@@ -44,15 +44,14 @@ const HotelsList = () => {
             <Search/>
             {loading && <Loading/>}
             {/*{error && <div>{error.response.data.detail[0].msg}</div>}*/}
-            <div className='hotelListContainer'>
-                <div className="hotelListWrapper">
+                <div className="hotelListContainer">
                     {data?.searchResults?.results.map((el, ind) =>
                         (
                             <HotelListItem key={el.id} item={el}/>
                         )
                     )}
                 </div>
-            </div>
+
         </div>
     );
 };

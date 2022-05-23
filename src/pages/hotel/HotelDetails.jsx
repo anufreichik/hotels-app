@@ -1,9 +1,10 @@
-import React,{useContext} from 'react';
+import React, {useContext} from 'react';
 import {useLocation} from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 import {SearchContext} from "../../context/SearchContext";
 import Loading from "../../components/loading/Loading";
 import HotelImages from "./hotelimages/HotelImages";
+import HotelOverview from "./overview/HotelOverview";
 
 const HotelDetails = () => {
     const location = useLocation();
@@ -29,12 +30,11 @@ const HotelDetails = () => {
             <div className='hotelDetailsContainer'>
                 <div className="hotelDetailsWrapper">
 
-                    <div className="hotelImages">
-                        <HotelImages hotelid={hotelid}/>
-                    </div>
-                    <div className="hotelDetailsOverview">
 
-                    </div>
+                    <HotelImages hotelid={hotelid}/>
+
+                    <HotelOverview data={data}/>
+
                     <div className="hotelRoomTypes">
 
                     </div>

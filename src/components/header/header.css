@@ -1,18 +1,15 @@
-.header {
+.headerContainer {
     background-color: #3664ad;
     color: black;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-.headerContainer {
     width: 100%;
     max-width: 1440px;
-    margin: 63px 0px 100px 0px;
+    margin: 0 auto 0px auto;
+    padding: 50px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 .title{
     width:138px;

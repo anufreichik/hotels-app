@@ -1,0 +1,55 @@
+.hotel-overview-container{
+    display: flex;
+    margin: 50px auto 0 auto;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    background: #FFFFFF;
+    padding:20px;
+    max-width: 1100px;
+
+}
+.hotel-overview-leftSection{
+    flex:2;
+}
+.hotel-overview-rightSection{
+    flex:1;
+}
+
+.hotel-overview-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.hotel-overview-amenities-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.amenities-items{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.amenities-item{
+    padding:10px;
+    font-size:14px;
+    font-family:'Manrope';
+    display: flex;
+    align-items: center;
+}
+.amenities-item >img{
+    margin-right: 10px;
+    width: 18px;
+}
+.amenities-heading{
+    color: #141D38;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.map-section-container >img{
+
+}
+
+

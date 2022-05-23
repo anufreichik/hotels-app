@@ -3,7 +3,6 @@ import './header.css'
 import Search from "../search/Search";
 const Header = () => {
     return (
-        <div className='header'>
             <div className="headerContainer">
                 <div className="title">
                     <span className="titleText">
@@ -17,7 +16,6 @@ const Header = () => {
                 </div>
                 <Search/>
             </div>
-        </div>
     );
 };
 

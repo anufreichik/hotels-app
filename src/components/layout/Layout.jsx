@@ -4,8 +4,7 @@ import Navbar from "../navbar/Navbar";
 import './layout.css';
 const Layout = () => {
     return (
-        <div className="layoutContainer">
-            <div className="layoutWrapper">
+            <div className="layoutContainer">
                 <Navbar/>
                 <div className="content">
                     <main>
@@ -13,7 +12,7 @@ const Layout = () => {
                     </main>
                 </div>
             </div>
-        </div>
+
     );
 };
 
