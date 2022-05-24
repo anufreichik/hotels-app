@@ -33,7 +33,7 @@ const HotelOverview = ({data}) => {
             <div className="hotel-overview-rightSection">
                     <div className="map-section-container">
                         <div><img  scr={data?.mapWidget?.staticMapUrl}/></div>
-                        <div><span>{data?.address.fullAddress}</span></div>
+                        <div><span>{data?.address?.fullAddress}</span></div>
                     </div>
                     <div className="explore-section-container">
                         <h3 className='amenities-heading'>Explore the area</h3>

@@ -10,6 +10,7 @@ const HotelImages = ({hotelid}) => {
         {hotel_id: hotelid},
         hotelid
     );
+
     return (
         <>
             {loading && <Loading/>}

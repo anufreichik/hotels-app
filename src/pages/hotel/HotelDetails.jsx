@@ -5,6 +5,7 @@ import {SearchContext} from "../../context/SearchContext";
 import Loading from "../../components/loading/Loading";
 import HotelImages from "./hotelimages/HotelImages";
 import HotelOverview from "./overview/HotelOverview";
+import Roomtypes from "./roomtypes/Roomtypes";
 
 const HotelDetails = () => {
     const location = useLocation();
@@ -32,12 +33,14 @@ const HotelDetails = () => {
 
 
                     <HotelImages hotelid={hotelid}/>
+                    {
+                        data && <>
+                            <HotelOverview data={data}/>
 
-                    <HotelOverview data={data}/>
+                            <Roomtypes data={data}/>
+                        </>
+                    }
 
-                    <div className="hotelRoomTypes">
-
-                    </div>
                     <div className="hotelAmenities">
 
                     </div>
