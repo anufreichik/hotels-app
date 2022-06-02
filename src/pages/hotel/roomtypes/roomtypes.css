@@ -9,18 +9,25 @@
     border-radius: 10px;
     background: #FFFFFF;
     border: 1px solid #F7F7F7;
-    padding: 10px;
+    padding: 30px 10px;
 }
 .room-info{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #F7F7F7;
+    padding:20px;
+}
+.room-info span{
+    font-family:'Manrope';
+    line-height: 30px;
+    color: #939393;
 }
 .room-images-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-bottom:30px;
 }
 .room-images-container img{
     width: 100%;
@@ -44,4 +51,8 @@
     font-size: 30px;
     color: #79655E;
     cursor: pointer;
+}
+.room-images-container img{
+    object-fit: cover;
+    height: 100%;
 }

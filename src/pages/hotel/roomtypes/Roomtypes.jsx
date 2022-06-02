@@ -1,16 +1,22 @@
-import React, { useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import './roomtypes.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleArrowLeft, faCircleArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 const Roomtypes = ({data}) => {
-    const initialArrayOfSlides = [];
-    data?.roomsAndRates?.rooms?.forEach((item) => {
-        initialArrayOfSlides.push({curSlide: 0, len: item.images.length});
-    })
+    const [roomSlides, setRoomSlides] = useState();
 
-    const [roomSlides, setRoomSlides] = useState(initialArrayOfSlides);
+    useEffect(() => {
+        const initialArrayOfSlides = [];
+        data?.roomsAndRates?.rooms?.forEach((item) => {
+            initialArrayOfSlides.push({curSlide: 0, len: item.images.length});
+        })
+        setRoomSlides(initialArrayOfSlides);
+    }, []);
+
+
+
 
     const handleMove = (direction, index) => {
         let newList;
@@ -44,8 +50,9 @@ const Roomtypes = ({data}) => {
                                     className="arrow-left"
                                     onClick={() => handleMove("l", ind)}
                                 />
-                                <img src={room.images[roomSlides[ind].curSlide]?.fullSizeUrl}
-                                     alt={room.images[roomSlides[ind].curSlide].caption}/>
+
+                                <img src={room.images[roomSlides[ind]?.curSlide]?.fullSizeUrl}
+                                     alt={room.images[roomSlides[ind]?.curSlide]?.caption}/>
                                 <FontAwesomeIcon
                                     icon={faCircleArrowRight}
                                     className="arrow-right"
@@ -61,12 +68,12 @@ const Roomtypes = ({data}) => {
                                 <span>{room.ratePlans[0]?.cancellation?.title}</span>
                                 <Link to='./'>More details ></Link>
                             </div>
-                            <div>
+                            <div className='room-info'>
                                 <h4>Extras</h4>
 
                                 {room.ratePlans[0].features?.map((f, fi) => {
                                     return (
-                                        <div key={fi}>{f?.info}</div>
+                                        <span key={fi}>{f?.info}</span>
                                     )
                                 })}
                             </div>
