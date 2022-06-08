@@ -8,6 +8,7 @@ import HotelsList from "./pages/hotellist/HotelsList";
 import HotelDetails from "./pages/hotel/HotelDetails";
 import Layout from "./components/layout/Layout";
 import DestinationsByRegionDropdown from "./components/DestinationsByRegionDropdown/DestinationsByRegionDropdown";
+import AppMap from "./components/AppMap/AppMap";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                   <Route path="hotels" element={<HotelsList/>}/>
                   <Route path="hotels/:id" element={<HotelDetails/>}/>
                   <Route path="/regions" element={<DestinationsByRegionDropdown/>}/>
+                  <Route path="/map" element={<AppMap/>}/>
               </Route>
         </Routes>
       </BrowserRouter>

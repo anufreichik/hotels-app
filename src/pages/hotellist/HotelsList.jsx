@@ -5,6 +5,7 @@ import useFetch from "../../hooks/useFetch";
 import HotelListItem from "../../components/hotellistitem/HotelListItem";
 import './hotelslist.css';
 import Loading from "../../components/loading/Loading";
+import HotelsMap from "../../components/HotelsMap/HotelsMap";
 
 
 const HotelsList = () => {
@@ -39,11 +40,17 @@ const HotelsList = () => {
         reFetch();
     }, [destinationId])//, options.adult, dates.checkin_date, dates.checkout_date
 
+
     return (
         <div>
             <Search/>
             {loading && <Loading/>}
             {/*{error && <div>{error.response.data.detail[0].msg}</div>}*/}
+
+            {
+                data && <HotelsMap results={data?.searchResults?.results}/>
+            }
+
                 <div className="hotelListContainer">
                     {data?.searchResults?.results.map((el, ind) =>
                         (
